@@ -1,0 +1,301 @@
+@charset "UTF-8";
+.fv_wave {
+  width: 49vw;
+}
+
+#fv {
+  margin-top: 130px;
+  position: relative;
+}
+#fv h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 4vw;
+  font-weight: normal;
+  color: #393872;
+  padding-left: 20px;
+}
+
+.fv_line {
+  position: absolute;
+  top: 73%;
+}
+
+.fv_russia {
+  font-family: "stix-two-text", serif;
+  position: absolute;
+  color: #393872;
+  top: 60%;
+  left: 41%;
+  font-size: 11vw;
+  opacity: 0.2;
+  letter-spacing: -0.4em;
+}
+
+.scroll {
+  position: relative;
+  margin-top: 180px;
+}
+.scroll span {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  font-size: 15px;
+  color: #393872;
+}
+.scroll::after {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  top: 20%;
+  left: 51%;
+  /*線の形状*/
+  width: 1px;
+  height: 200px;
+  background: #393872;
+  /*線の動き1.4秒かけて動く。永遠にループ*/
+  animation: pathmove 2s ease-in-out infinite;
+  opacity: 0;
+}
+
+@keyframes pathmove {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+  30% {
+    height: 60px;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    top: 50px;
+    opacity: 0;
+  }
+}
+#concept {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 320px;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+#concept h2 {
+  font-weight: normal;
+  font-size: 2.8vw;
+  line-height: 1.25;
+  color: #393872;
+  font-feature-settings: palt;
+}
+
+.concept_sub {
+  display: flex;
+  padding-top: 30px;
+  align-items: baseline;
+}
+.concept_sub h3 {
+  font-size: 30px;
+  font-weight: normal;
+}
+.concept_sub p {
+  color: #393872;
+  font-size: 20px;
+  padding-left: 15px;
+}
+
+.concept_desc {
+  font-size: 16px;
+  line-height: 2.6;
+  padding-top: 67px;
+}
+
+.concept_hand {
+  width: 23vw;
+  position: absolute;
+  left: 65%;
+  top: 33%;
+}
+
+.top_btn {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 35px;
+  display: flex;
+  align-items: center;
+}
+.top_btn p {
+  font-size: 15px;
+  color: #393872;
+}
+
+.btn_out {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #393872;
+  margin-left: 4px;
+}
+
+.btn_inner {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 9px solid #dde4f6;
+}
+
+#concert {
+  padding-top: 250px;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 0 auto;
+}
+#concert h3 {
+  font-weight: normal;
+  font-size: 30px;
+  text-align: center;
+}
+#concert h4 {
+  font-weight: normal;
+  font-size: 20px;
+  color: #393872;
+  text-align: center;
+  padding-top: 8px;
+  margin: 0;
+}
+
+.concert_info {
+  position: relative;
+  margin-top: 50px;
+  margin-left: 8%;
+  margin-right: 8%;
+  background: #e9effc;
+  border-radius: 25px;
+  text-align: center;
+}
+.concert_info .info_title {
+  font-size: 22px;
+  padding-top: 35px;
+}
+
+.concert_title {
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-top: 50px;
+}
+
+.concert_detail {
+  font-size: 18px;
+  line-height: 1.3;
+}
+.concert_detail span {
+  font-size: 120%;
+  letter-spacing: 1px;
+}
+.concert_detail span .detail_time {
+  padding-left: 2px;
+  padding-top: 1px;
+}
+
+.detail_pro {
+  line-height: 1.7;
+}
+
+.concert_free {
+  padding-top: 50px;
+  font-size: 20px;
+  margin-bottom: 55px;
+}
+
+.concert_btn {
+  margin: 0 auto;
+  max-width: 300px;
+  width: 22vw;
+  height: 3.5vw;
+  background: #4d4c80;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.concert_btn p {
+  font-size: 17px;
+  color: #fff;
+}
+
+.detail_btn {
+  max-width: 1000px;
+  padding-top: 35px;
+  display: flex;
+  align-items: center;
+  padding-left: 72%;
+  padding-bottom: 35px;
+}
+.detail_btn p {
+  font-size: 15px;
+  color: #393872;
+}
+
+.bar_top {
+  width: 4.4vw;
+  position: absolute;
+  right: 6%;
+}
+
+.bar_bottom {
+  width: 7vw;
+  position: absolute;
+  bottom: 0%;
+  left: 6%;
+}
+
+#recruit {
+  margin-top: 235px;
+  margin-right: 13%;
+}
+
+.recruit_content {
+  position: relative;
+}
+
+.recruit_back img {
+  width: 100%;
+}
+
+.recruit_text {
+  position: absolute;
+  top: 50%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.recruit_text h3 {
+  font-weight: normal;
+  font-size: 30px;
+}
+.recruit_text h4 {
+  font-weight: normal;
+  padding-top: 8px;
+  font-size: 20px;
+  color: #393872;
+  margin: 0;
+}
+.recruit_text p {
+  font-size: 16px;
+  padding-top: 52px;
+  line-height: 1.7;
+}
+
+.detail_btn.recruit_btn {
+  position: absolute;
+  bottom: 8%;
+}/*# sourceMappingURL=style.css.map */
