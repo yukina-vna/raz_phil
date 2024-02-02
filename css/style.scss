@@ -282,3 +282,68 @@
       bottom: 8%;
     }
   
+    #contact {
+      margin-left: 13%;
+      margin-top: 170px;
+      margin-bottom: 200px;
+    }
+    .contact_back {
+      transform: scale(-1, 1);
+      img {
+        width: 100%;
+      }
+    }
+    .contact_content {
+      position: relative;
+    }
+    .contact_text {
+      position: absolute;
+      top: 27%;
+      left: 42%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      h3 {
+        font-weight: normal;
+        font-size: 30px;
+      }
+      h4 {
+        font-weight: normal;
+        font-size: 20px;
+        margin: 0;
+        padding-top: 8px;
+        color: #393872;
+      }
+      p {
+        padding-top: 55px;
+        font-size: 16px;
+      }
+    }
+    .contact_address {
+      position: absolute;
+      font-size: 16px;
+      top: 60%;
+      left: 42%;
+      transform: translate(-50%, -50%);
+      padding-top: 150px;
+      span {
+        font-size: 18px;
+      }
+    }
+    .contact_x {
+      display: flex;
+      align-items: center;
+      padding-top: 35px;
+      img {
+        width: 38px;
+        padding-left: 20px;
+      }
+    }
+    .contact_instagram {
+      display: flex;
+      align-items: center;
+      padding-top: 35px;
+      img {
+        width: 38px;
+        padding-left: 20px;
+      }
+    }
