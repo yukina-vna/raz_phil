@@ -92,3 +92,41 @@ h1 {
     width: 38px;
     margin-top: 37px;
 }
+
+/* ヘッダー */
+#footer {
+    background-color: #e9effc;
+}
+.footer_menu {
+    max-width: 520px;
+    margin: 0 auto;
+    padding-top: 90px;
+}
+.footer_menu ul {
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+}
+.footer_info {
+    display: flex;
+    max-width: 520px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 60px;
+    align-items: center;
+    padding-bottom: 70px;
+}
+.footer_name {
+    padding-left: 15px;
+    line-height: 1.9;
+}
+.footer_sns {
+    display: flex;
+}
+.footer_logo img {
+    width: 80px;
+}
+.footer_sns img {
+    width: 38px;
+    padding-left: 30px;
+}
