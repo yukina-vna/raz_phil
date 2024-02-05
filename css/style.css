@@ -2,6 +2,11 @@
 .fv_wave {
   width: 49vw;
 }
+@media screen and (max-width: 767px) {
+  .fv_wave {
+    width: 41vw;
+  }
+}
 
 #fv {
   margin-top: 130px;
@@ -15,6 +20,12 @@
   font-weight: normal;
   color: #393872;
   padding-left: 20px;
+}
+@media screen and (max-width: 767px) {
+  #fv h2 {
+    font-size: 4.8vw;
+    left: 38%;
+  }
 }
 
 .fv_line {
@@ -43,6 +54,12 @@
   left: 50%;
   font-size: 15px;
   color: #393872;
+}
+@media screen and (max-width: 767px) {
+  .scroll span {
+    left: 48%;
+    font-size: 11px;
+  }
 }
 .scroll::after {
   content: "";
@@ -92,6 +109,28 @@
   font-feature-settings: palt;
 }
 
+@media screen and (max-width: 767px) {
+  #concept {
+    display: block;
+    text-align: center;
+    padding-top: 150px;
+  }
+  #concept h2 {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+}
+.concept_hand_sp {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .concept_hand_sp {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+  }
+}
+
 .concept_sub {
   display: flex;
   padding-top: 30px;
@@ -107,17 +146,51 @@
   padding-left: 15px;
 }
 
+@media screen and (max-width: 767px) {
+  .concept_sub {
+    display: block;
+    padding-top: 50px;
+  }
+  .concept_sub h3 {
+    font-size: 20px;
+  }
+  .concept_sub p {
+    font-size: 14px;
+  }
+}
 .concept_desc {
   font-size: 16px;
   line-height: 2.6;
   padding-top: 67px;
 }
+.concept_desc .br_sp {
+  display: none;
+}
 
+@media screen and (max-width: 767px) {
+  .concept_desc {
+    font-size: 12px;
+    line-height: 1.7;
+    font-feature-settings: "palt";
+    padding-top: 30px;
+  }
+  .concept_desc .br_sp {
+    display: block;
+  }
+  .concept_desc .br_pc {
+    display: none;
+  }
+}
 .concept_hand {
   width: 23vw;
   position: absolute;
   left: 65%;
   top: 33%;
+}
+@media screen and (max-width: 767px) {
+  .concept_hand {
+    display: none;
+  }
 }
 
 .top_btn {
@@ -132,6 +205,7 @@
 .top_btn p {
   font-size: 15px;
   color: #393872;
+  margin: 0 auto;
 }
 
 .btn_out {
@@ -153,6 +227,19 @@
   border-left: 9px solid #dde4f6;
 }
 
+@media screen and (max-width: 767px) {
+  .top_btn p {
+    font-size: 11px;
+  }
+  .btn_out {
+    width: 12px;
+    height: 12px;
+  }
+  .btn_inner {
+    width: 12px;
+    height: 12px;
+  }
+}
 #concert {
   padding-top: 250px;
   padding-left: 5%;
@@ -228,7 +315,7 @@
   align-items: center;
 }
 .concert_btn p {
-  font-size: 17px;
+  font-size: 1.3vw;
   color: #fff;
 }
 
@@ -343,10 +430,9 @@
 .contact_address {
   position: absolute;
   font-size: 16px;
-  top: 60%;
-  left: 42%;
+  top: 74%;
+  left: 44%;
   transform: translate(-50%, -50%);
-  padding-top: 150px;
 }
 .contact_address span {
   font-size: 18px;
@@ -355,7 +441,7 @@
 .contact_x {
   display: flex;
   align-items: center;
-  padding-top: 35px;
+  padding-top: 2.5vw;
 }
 .contact_x img {
   width: 38px;
@@ -365,7 +451,7 @@
 .contact_instagram {
   display: flex;
   align-items: center;
-  padding-top: 35px;
+  padding-top: 2.5vw;
 }
 .contact_instagram img {
   width: 38px;

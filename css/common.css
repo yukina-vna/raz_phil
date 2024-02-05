@@ -92,8 +92,102 @@ h1 {
     width: 38px;
     margin-top: 37px;
 }
+.sp_btn,
+.sp_nav {
+    display: none;
+}
 
-/* ヘッダー */
+@media screen and (max-width: 767px) {
+    .sp_btn,
+    .sp_nav {
+        display: block;
+    }
+    h1 {
+        width: 40px;
+        margin-left: 4%;
+    }
+    .header_menu_pc {
+        display: none;
+    }
+    /* ハンバーガーメニュー */
+    .sp_btn {
+        position: absolute;
+        top: 33px;
+        right: 25px;
+        display: block;
+        height: 23px;
+        cursor: pointer;
+        z-index: 2;
+    }
+    .sp_btn span {
+        position: relative;
+        top: 10px;
+        display: block;
+        width: 30px;
+        height: 3px;
+        border-radius: 4px;
+        background: #393872;
+        transition: 0.3s;
+    }
+
+    .sp_btn span::before,
+    .sp_btn span::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 30px;
+        height: 3px;
+        border-radius: 4px;
+        background: #393872;
+        transition: 0.3s;
+    }
+    .sp_btn span::before {
+        bottom: 10px;
+    }
+    .sp_btn span::after {
+        top: 10px;
+    }
+
+    /* ハンバーガーメニュー閉じる */
+    .sp_btn.open span {
+        background: transparent;
+    }
+    .sp_btn.open span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+        background: #fff;
+    }
+    .sp_btn.open span::after {
+        top: 0;
+        transform: rotate(135deg);
+        background: #fff;
+    }
+
+    /* ハンバーガーメニュー */
+    .sp_nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #393872;
+        z-index: 1;
+    }
+    .sp_nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .sp_nav ul li {
+        padding: 20px;
+        color: #fff;
+        font-size: 18px;
+    }
+}
+
+/* フッター */
 #footer {
     background-color: #e9effc;
 }

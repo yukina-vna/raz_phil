@@ -57,3 +57,16 @@
     };
     s.parentNode.insertBefore(tk, s);
 })(document);
+
+// ハンバーガーメニュー
+$(function () {
+    // ページが読み込まれた時にメニューを閉じる
+    $(".sp_btn").removeClass("open");
+    $(".sp_nav").hide();
+
+    // クリックイベントを追加
+    $(".sp_btn, .sp_nav li").on("click", function () {
+        $(".sp_btn").toggleClass("open");
+        $(".sp_nav").fadeToggle();
+    });
+});
