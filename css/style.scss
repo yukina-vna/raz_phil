@@ -110,6 +110,9 @@
         font-size: 20px;
         padding-top: 10px;
       }
+      p {
+        padding-top: 2px;
+      }
     }
   }
   .concept_hand_sp {
@@ -188,7 +191,6 @@
     p {
     font-size: 15px;
     color: #393872;
-    margin: 0 auto;
     }
   }
   .btn_out {
@@ -210,8 +212,10 @@
     }
     @media screen and (max-width: 767px) {
       .top_btn {
+        max-width: 375px;
         p {
         font-size: 11px;
+        margin: 0 auto;
       }
     }
     .btn_out {
@@ -219,8 +223,12 @@
       height: 12px;
     }
     .btn_inner {
-      width: 12px;
-      height: 12px;
+      width: 2px;
+      height: 2px;
+      left: 64%;
+      border-top: 3px solid transparent;
+      border-bottom: 3px solid transparent;
+      border-left: 6px solid #dde4f6;
     }
     }
 
@@ -318,6 +326,53 @@
       position: absolute;
       bottom: 0%;
       left: 6%;
+    }
+
+    @media screen and (max-width: 767px) {
+      #concert {
+        padding-top: 130px;
+        h3 {
+          font-size: 20px;
+        }
+        h4 {
+          font-size: 14px;
+          padding-top: 2px;
+        }
+      }
+      .concert_info {
+        margin-top: 25px;
+        .info_title {
+          padding-top: 27px;
+          font-size: 18px;
+        }
+      }
+      .concert_title {
+        font-size: 17px;
+      }
+      .concert_detail {
+        font-size: 15px;
+        font-feature-settings: "palt";
+      }
+      .detail_pro {
+        font-size: 13px;
+      }
+      .concert_free {
+        font-size: 17px;
+      }
+      .concert_btn {
+        width: 200px;
+        height: 9vw;
+        p {
+          font-size: 14px;
+        }
+      }
+      .detail_btn {
+        padding-left: 0;
+        justify-content: center;
+        p {
+          font-size: 11px;
+        }
+      }
     }
 
     #recruit {
