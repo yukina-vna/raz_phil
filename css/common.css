@@ -224,3 +224,38 @@ h1 {
     width: 38px;
     padding-left: 30px;
 }
+
+@media screen and (max-width: 767px) {
+    .footer_menu {
+        padding-top: 10px;
+        text-align: center;
+    }
+    .footer_menu ul {
+        display: block;
+        font-size: 17px;
+    }
+    .footer_menu li {
+        padding-top: 45px;
+    }
+    .footer_info {
+        flex-direction: column;
+    }
+    .footer_logo {
+        order: 3;
+    }
+    .footer_name {
+        order: 2;
+        font-size: 15px;
+        line-height: 1.5;
+        text-align: center;
+        padding-bottom: 45px;
+    }
+    .footer_sns {
+        padding-right: 38px;
+        padding-bottom: 55px;
+    }
+    .footer_sns img {
+        width: 30px;
+        padding-left: 30px;
+    }
+}
