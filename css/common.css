@@ -165,13 +165,22 @@ h1 {
 
     /* ハンバーガーメニュー */
     .sp_nav {
-        position: absolute;
+        position: fixed; /* 修正 */
+        top: 0;
+        bottom: 0; /* 修正 */
+        left: 0;
+        right: 0; /* 修正 */
+        width: 100%;
+        height: 100%;
+        background: #393872;
+        z-index: 1;
+        /* position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         background: #393872;
-        z-index: 1;
+        z-index: 1; */
     }
     .sp_nav ul {
         display: flex;
@@ -184,6 +193,12 @@ h1 {
         padding: 20px;
         color: #fff;
         font-size: 18px;
+    }
+    .sp_nav_sns {
+        position: absolute;
+        display: flex;
+        top: 72%;
+        left: 17%;
     }
 }
 
