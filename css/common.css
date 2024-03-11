@@ -274,3 +274,94 @@ h1 {
         padding-left: 30px;
     }
 }
+
+/* 子ページのタイトル */
+.sub_title {
+    margin-bottom: 100px;
+    margin-top: 130px;
+}
+.title_bar {
+    position: relative;
+    width: 490px;
+}
+
+.title_en {
+    font-family: "stix-two-text";
+    color: #393872;
+    font-size: 60px;
+}
+.title_jp {
+    padding-left: 4px;
+    font-size: 18px;
+    padding-top: 12px;
+}
+.title_text {
+    position: absolute;
+    top: 31%;
+    margin-left: 10%;
+}
+
+.sub_content {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.sub_content p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.sub_btn {
+    margin: 0 auto;
+    max-width: 300px;
+    width: 22vw;
+    height: 3.5vw;
+    background: #4d4c80;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+}
+.sub_btn p {
+    font-size: 18px;
+    color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+    .sub_title {
+        margin-bottom: 70px;
+        margin-top: 100px;
+    }
+    .title_bar {
+        position: relative;
+        width: 270px;
+    }
+
+    .title_en {
+        font-family: "stix-two-text";
+        color: #393872;
+        font-size: 30px;
+    }
+    .title_jp {
+        font-size: 12px;
+        padding-top: 7px;
+    }
+    .title_text {
+        position: absolute;
+        top: 24%;
+    }
+    .sub_content p {
+        font-size: 14px;
+    }
+    .sub_btn {
+        width: 20vw;
+        height: 4vw;
+        margin-bottom: 100px;
+    }
+    .sub_btn p {
+        font-size: 13px;
+    }
+}
