@@ -1,1 +1,7 @@
-/*# sourceMappingURL=style.css.map */
+.concerts_paper {
+  display: block;
+  margin: 0 auto;
+}
+.concerts_paper img {
+  width: 50vw;
+}/*# sourceMappingURL=style.css.map */

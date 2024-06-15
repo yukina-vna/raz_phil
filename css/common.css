@@ -353,6 +353,9 @@ h1 {
         position: absolute;
         top: 26%;
     }
+    body.Android .title_text {
+        top: 20%;
+    }
     .sub_content p {
         font-size: 14px;
     }
