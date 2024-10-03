@@ -368,3 +368,21 @@ h1 {
         font-size: 13px;
     }
 }
+
+/* 見出しの位置調整がうまくいかないので以下ゴリ押しでなおす */
+@media screen and (max-width: 380px) {
+    .title_text {
+        top: 26%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .title_text {
+        top: 18%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .title_text {
+        top: 21%;
+    }
+}
